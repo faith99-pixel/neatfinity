@@ -19,7 +19,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const serviceNames: Record<string, string> = {
       'basic-clean': 'Basic Clean',
       'deep-clean': 'Deep Clean',
@@ -28,7 +28,7 @@ export default function Contact() {
       'eco-friendly': 'Eco-Friendly Cleaning',
       'specialized': 'Specialized Services',
     };
-    
+
     const apartmentNames: Record<string, string> = {
       'studio-1bed': 'Studio/1 Bedroom',
       '2-bedroom': '2 Bedroom',
@@ -54,11 +54,11 @@ ${formData.message || 'None'}
 
     // Open default email client
     window.location.href = `mailto:hello@neatfinity.ng?subject=Cleaning Service Booking - ${formData.name}&body=${encodeURIComponent(emailBody)}`;
-    
+
     setStatus('success');
     setTimeout(() => setStatus('idle'), 3000);
   };
-  
+
   const handleWhatsApp = () => {
     const serviceNames: Record<string, string> = {
       'basic-clean': 'Basic Clean',
@@ -68,7 +68,7 @@ ${formData.message || 'None'}
       'eco-friendly': 'Eco-Friendly Cleaning',
       'specialized': 'Specialized Services',
     };
-    
+
     const apartmentNames: Record<string, string> = {
       'studio-1bed': 'Studio/1 Bedroom',
       '2-bedroom': '2 Bedroom',
@@ -147,7 +147,7 @@ ${formData.message || 'None'}`;
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 lg:p-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Request a Quote</h2>
-              
+
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-2">Full Name *</label>
@@ -254,7 +254,7 @@ ${formData.message || 'None'}`;
                   >
                     Send via Email →
                   </button>
-                  
+
                   <button
                     type="button"
                     onClick={handleWhatsApp}
@@ -289,7 +289,7 @@ ${formData.message || 'None'}`;
                       <a href="https://wa.me/2347025964703" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition text-sm">Chat on WhatsApp</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl flex-shrink-0">📧</div>
                     <div>
@@ -297,7 +297,7 @@ ${formData.message || 'None'}`;
                       <a href="mailto:hello@neatfinity.ng" className="text-white/90 hover:text-white transition">hello@neatfinity.ng</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl flex-shrink-0">📍</div>
                     <div>
@@ -305,7 +305,7 @@ ${formData.message || 'None'}`;
                       <div className="text-white/90">Lagos, Abuja & Port Harcourt</div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl flex-shrink-0">🕐</div>
                     <div>
@@ -376,7 +376,7 @@ ${formData.message || 'None'}`;
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>© 2024 Neatfinity. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Neatfinity. All rights reserved. | Privacy Policy | Terms of Service</p>
           </div>
         </div>
       </footer>

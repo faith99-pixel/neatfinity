@@ -35,8 +35,7 @@ export default function Home() {
           </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
-          >
+            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
             <span className={`w-6 h-0.5 bg-gray-900 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
             <span className={`w-6 h-0.5 bg-gray-900 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
             <span className={`w-6 h-0.5 bg-gray-900 transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
@@ -560,7 +559,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>© 2024 Neatfinity. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>© {new Date().getFullYear()} Neatfinity. All rights reserved. | Privacy Policy | Terms of Service</p>
           </div>
         </div>
       </footer>

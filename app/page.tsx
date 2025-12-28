@@ -508,10 +508,10 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Ready for a Spotless Space?</h2>
           <p className="text-base md:text-lg mb-6 md:mb-10 opacity-90 max-w-3xl mx-auto px-4">Book today and get 20% off!</p>
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">
-            <a href="/contact" className="bg-white text-primary px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition-all hover:scale-110 shadow-2xl inline-block">
+            <a href="/contact" className="bg-white text-primary px-12 py-5 rounded-full text-base md:text-lg font-bold hover:bg-gray-100 transition-all hover:scale-110 shadow-2xl inline-block">
               Get Started Now
             </a>
-            <a href="tel:+2347025964703" className="bg-transparent border-2 border-white text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-white hover:text-primary transition-all hover:scale-110 inline-block">
+            <a href="tel:+2347025964703" className="bg-transparent border-2 text-base md:text-lg border-white text-white md:px-12 px-16 py-5 rounded-full font-bold hover:bg-white hover:text-primary transition-all hover:scale-110 inline-block">
               Call +234 702 596 4703
             </a>
           </div>
@@ -539,7 +539,7 @@ export default function Home() {
               <h4 className="font-bold text-lg mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition">Careers</a></li>
+                {/* <li><a href="#" className="hover:text-white transition">Careers</a></li> */}
                 <li><a href="#" className="hover:text-white transition">Blog</a></li>
                 <li><a href="#" className="hover:text-white transition">Contact</a></li>
               </ul>

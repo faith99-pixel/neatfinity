@@ -4,11 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,  // This fixes the 404 issue!
 }
 
-
-// next.config.js
-module.exports = {
-    output: 'export',
-  };
-  
+module.exports = nextConfig
